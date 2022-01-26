@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider web component</title>
+    <script src="Slider.js"></script>
+    <!-- <script src="PopUpInfo.js"></script> -->
+  </head>
+  <body>
+    <div>
+      <h2>This is a normal made slider</h2>
+      <input
+        type="range"
+        min="0"
+        max="10"
+        step="1"
+        value="4"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output>4</output>
+      <h1>This is my slider</h1>
+      <my-slider min="0" max="10" step="1" />
+    </div>
+  </body>
+</html>
